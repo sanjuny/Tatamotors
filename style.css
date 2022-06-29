@@ -1,0 +1,120 @@
+.position{
+    width:100%;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.slide1{
+    background-image: url(images/slide-1.jpg);
+}
+.slide2{
+    background-image:url(images/slide-2.jpg);
+}
+.slide3{
+    background-image: url(images/slide-3.jpg);
+}
+
+/* third-hover-banner */
+.hover-img{
+    display: flex;
+}
+.main-img{
+    position: relative;
+    width: 33.33%;
+}
+.text-hover{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-family: 'uni_neueregular';
+    overflow: hidden;
+    transition: all .4s;
+}
+.hover-img div:hover{
+    width: 100%;
+    transition: 1s;
+}
+.text-hover p{
+    display: none;
+
+}
+.hover-img div{
+    max-height: 400px;
+    overflow:hidden;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.hover-img div:hover{
+    width: 100%;
+    transition: 1s;
+}
+.hover-img div img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.hover-img div:hover>p{
+    display: block;
+    color: #fff;
+}
+
+/* fourth-banner */
+.bg-img{
+    background-image: url(images/dots-image.png);
+    width: 100%;
+    justify-content:center;
+} 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* first-banner */
+@media screen and (max-width:768px) {
+    .position{
+        min-height: 45vh;
+    }
+    .slide1{
+        background-image: url(images/slide-1-tab.jpg);
+    
+    }
+    .slide2{
+        background-image:url(images/slide-2-tab.jpg);
+    
+    }
+    .slide3{
+        background-image: url(images/slide-3-tab.jpg);
+    
+    }
+
+    .hover-img{
+        flex-direction: column;
+    }
+    .main-img{
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 488px) {
+    .position{
+        min-height: 45vh;
+    }
+    .slide1{
+        background-image: url(images/slide-1-mob.jpg);
+    }
+    .slide2{
+        background-image:url(images/slide-2-mob.jpg);
+    }
+    .slide3{
+        background-image: url(images/slide-3-mob.jpg);
+    }
+
+}
